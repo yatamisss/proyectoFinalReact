@@ -5,7 +5,7 @@ const Card = () => {
     
     const fetchData = async () => {
         try {
-            const response = await fetch ('https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyC85SaQHhHm1kNz5vHWOhFYYjZtLO_PxPI &part=snippet,contentDetails,statistics,status');
+            const response = await fetch ('https://www.googleapis.com/youtube/v3/videos? &part=snippet,contentDetails,statistics,status');
             const jsonData = await response.json();
             setData(jsonData);
             console.log(data);
