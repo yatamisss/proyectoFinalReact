@@ -4,15 +4,13 @@ const Header = () => {
     return (
         <>
             <header>
-                <nav className="nab-bar">
-                    <div className="nab-bar__container">
-                        <a href="inicio">inicio</a>
-                        <a href="inicio">novedades</a>
-                        <form action="">
+                <nav className="nav-bar">
+                        <a className="nav-bar__a" href="inicio">inicio</a>
+                        <a className="nav-bar__a" href="inicio">videos mas populares</a>
+                        <form className="nav-bar__form" action="">
                             <input type="search" placeholder="search" />
                             <button type="submit">search</button>
                         </form>
-                    </div>
                 </nav>
             </header>
         </>

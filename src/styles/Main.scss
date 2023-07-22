@@ -4,12 +4,16 @@
     padding: 50px;
     text-align: center;
 
-    &__main{
+    &__main {
         margin: 15px;
         width: 350px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
-    &__h4{
+    &__h4 {
         font-size: unset;
     }
 }
