@@ -1,0 +1,15 @@
+.card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+
+    &__main{
+        margin: 15px;
+        width: 350px;
+    }
+
+    &__h4{
+        font-size: unset;
+    }
+}
