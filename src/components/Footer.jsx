@@ -5,8 +5,9 @@ const Footer = () => {
         <>
             <footer className='container-footer'>
                 <div className='container-footer__informacion'>
-                    <h4>Art House</h4>
-                    <a class='container-footer__link' href="">pagina web en proceso</a>
+                    <p>No nos cantactes aqui</p>
+                    <p>@paginafake</p>
+                    <p>©todos los derechos reservados</p>
                 </div>
             </footer>
         </>
