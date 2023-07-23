@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/Main.scss"
 
-const apiKey = process.env.YOUTUBE_API_KEY;
-
 const YouTubeAPI = () => {
     const [videos, setVideos] = useState([]);
 
@@ -11,7 +9,7 @@ const YouTubeAPI = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&key=${apiKey}`
+                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&key=${process.env.YOUTUBE_API_KEY}`
                 );
                 setVideos(response.data.items);
             } catch (error) {
