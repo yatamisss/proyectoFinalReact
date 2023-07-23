@@ -9,7 +9,7 @@ const YouTubeAPI = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&key=${process.env.YOUTUBE_API_KEY}`
+                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&key=AIzaSyC85SaQHhHm1kNz5vHWOhFYYjZtLO_PxPI`
                 );
                 setVideos(response.data.items);
             } catch (error) {
