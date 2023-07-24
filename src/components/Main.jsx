@@ -11,7 +11,7 @@ const YouTubeAPI = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&Key=${apiKey}`
+                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=9&key=${apiKey}`
                 );
                 setVideos(response.data.items);
             } catch (error) {
